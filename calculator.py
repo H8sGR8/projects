@@ -96,5 +96,4 @@ while True:
             print('xd')
     elif (b == '1'):
         print("+ for add\n- for subbtract]\n* for multiply\n/ for divade\nr for root\n^ for power\n")
-# 2r((3r((2^6+6^2)*10)+2*((18-9)/3)^2)/7)
-#2r((3r((2^6+6^2)*10)+2*((18-9)/3)^2)/7)
+# 2r((3r((2^6+6^2)*10)+2*((18-9)/3)^2)/7) = 2
