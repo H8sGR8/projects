@@ -84,10 +84,17 @@ def calculator (equaision):
             list.pop(list.index('-') + 1)
             list.pop(list.index('-'))
     return list[0]
-
-try:
-    print(round(calculator(input('what would you like to calculate??\n')),10))
-except:
-    print('xd')
-
+print('0 to break\n1 for legend\n2 to calculate')
+while True:
+    b = input('0, 1 or 2??\n')
+    if (b == '0'):
+        break
+    elif (b == '2'):
+        try:
+            print(round(calculator(input('what would you like to calculate??\n')), 10))
+        except:
+            print('xd')
+    elif (b == '1'):
+        print("+ for add\n- for subbtract]\n* for multiply\n/ for divade\nr for root\n^ for power\n")
+# 2r((3r((2^6+6^2)*10)+2*((18-9)/3)^2)/7)
 #2r((3r((2^6+6^2)*10)+2*((18-9)/3)^2)/7)
