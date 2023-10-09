@@ -131,7 +131,7 @@ while (table != 0):
         print('split\n', split, '\n', count(split))
     print('dealer\n', dealer, '\n', count(dealer))
     table = int(input('1 to play, 0 to leave\n'))
-    if (budget == 0):
+    if (budget <= 0):
         table = 0
 os.system('cls')
 print('you left the table with', budget,'$ so your bilance is', budget - 1000, '$')
