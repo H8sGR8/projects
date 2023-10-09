@@ -72,7 +72,7 @@ while (table != 0):
             print(budget, '\n',dealer[0], '\n',player, split,'\nmain\n', player)
         elif (a == 4 and player[0][0] != player[1][0]):
             a = int(input('cant split\n1 to pass, 2 to hit, 3 to double\n'))
-        elif (a == 3):
+        elif (a == 3 and bet <= budget):
             budget -= bet
             bet = 2*bet
             b = randint(0, len(deck) - 1)
@@ -80,6 +80,8 @@ while (table != 0):
             deck.pop(b)
             p_points = count(player)
             play = 0
+        elif(a == 3 and bet > budget):
+            a = int(input('not enough money\n1 to pass, 2 to hit\n'))
     while (p_points < 21 and play == 1):
         if((len(player) > 2 and len(split) == 0) or (len(split) > 0)):
             a = int(input('1 to pass, 2 to hit\n'))
