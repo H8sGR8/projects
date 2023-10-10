@@ -71,7 +71,7 @@ while (table != 0):
             os.system('cls')
             print(budget, '\n',dealer[0], '\n',player, split,'\nmain\n', player)
         elif (a == 4 and player[0][0] != player[1][0]):
-            a = int(input('cant split\n1 to pass, 2 to hit, 3 to double\n'))
+            a = int(input('cant split\n1 to pass, 2 to hit\n'))
         elif (a == 3 and bet <= budget):
             budget -= bet
             bet = 2*bet
